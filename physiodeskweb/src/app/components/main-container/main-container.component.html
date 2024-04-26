@@ -1,1 +1,17 @@
-<p>main-container works!</p>
+<!-- main-container.component.html -->
+
+<!-- main-container.component.html -->
+
+<div *ngIf="rutaActual !== '/personalData' && rutaActual !== '/problems'">
+  <a href="/personalData">EDITAR INFORMACION</a>
+  <app-sidebar></app-sidebar>
+</div>
+
+<div *ngIf="rutaActual === '/personalData'">
+  <app-card-welcome></app-card-welcome>
+  <app-personal-data-container></app-personal-data-container>
+</div>
+
+<div *ngIf="rutaActual === '/problems'">
+  <app-problem-container></app-problem-container>
+</div>
