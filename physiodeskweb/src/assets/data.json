@@ -1,0 +1,141 @@
+{
+"fisios": [
+{
+"id": 1,
+"nombre": "Dr. Juan Pérez",
+"imagen": "url_imagen_juan_perez",
+"biografia": "Especialista en fisioterapia deportiva con más de 10 años de experiencia. Apasionado por ayudar a las personas a recuperar su movilidad y mejorar su calidad de vida.",
+"edad": 40,
+"horarios": [
+"Lunes a Viernes: 9:00-18:00",
+"Sábado: 9:00-14:00"
+]
+},
+{
+"id": 2,
+"nombre": "Dra. María González",
+"imagen": "url_imagen_maria_gonzalez",
+"biografia": "Fisioterapeuta certificada con enfoque en rehabilitación neuromuscular. Comprometida con proporcionar tratamientos personalizados y efectivos para cada paciente.",
+"edad": 38,
+"horarios": [
+"Lunes, Miércoles y Viernes: 10:00-16:00",
+"Martes y Jueves: 14:00-20:00"
+]
+},
+{
+"id": 3,
+"nombre": "Dr. Carlos Ramírez",
+"imagen": "url_imagen_carlos_ramirez",
+"biografia": "Experto en fisioterapia ortopédica y manejo del dolor crónico. Utiliza técnicas manuales y ejercicios terapéuticos para mejorar la función y la calidad de vida de sus pacientes.",
+"edad": 45,
+"horarios": [
+"Lunes a Viernes: 8:00-16:00"
+]
+},
+{
+"id": 4,
+"nombre": "Dra. Sofía Torres",
+"imagen": "url_imagen_sofia_torres",
+"biografia": "Especialista en fisioterapia pediátrica. Ayuda a los niños con discapacidades y trastornos del desarrollo a alcanzar su máximo potencial a través de terapias personalizadas y lúdicas.",
+"edad": 32,
+"horarios": [
+"Martes y Jueves: 9:00-13:00",
+"Sábado: 10:00-14:00"
+]
+},
+{
+"id": 5,
+"nombre": "Dr. Andrés Guzmán",
+"imagen": "url_imagen_andres_guzman",
+"biografia": "Fisioterapeuta especializado en rehabilitación cardiopulmonar. Trabaja en la prevención y el tratamiento de enfermedades respiratorias y cardíacas a través de ejercicios y técnicas específicas.",
+"edad": 39,
+"horarios": [
+"Lunes, Miércoles y Viernes: 14:00-20:00"
+]
+},
+{
+"id": 6,
+"nombre": "Dra. Laura Martínez",
+"imagen": "url_imagen_laura_martinez",
+"biografia": "Experta en fisioterapia geriátrica. Ayuda a las personas mayores a mantener su independencia y calidad de vida a través de programas de ejercicios y terapias adaptadas.",
+"edad": 42,
+"horarios": [
+"Martes y Jueves: 10:00-16:00",
+"Sábado: 9:00-13:00"
+]
+},
+{
+"id": 7,
+"nombre": "Dr. Pedro Sánchez",
+"imagen": "url_imagen_pedro_sanchez",
+"biografia": "Fisioterapeuta especializado en rehabilitación neurológica. Trabaja con pacientes que han sufrido accidentes cerebrovasculares, lesiones de la médula espinal y otras afecciones neurológicas.",
+"edad": 38,
+"horarios": [
+"Lunes, Miércoles y Viernes: 8:00-14:00"
+]
+},
+{
+"id": 8,
+"nombre": "Dra. Natalia Gómez",
+"imagen": "url_imagen_natalia_gomez",
+"biografia": "Fisioterapeuta experta en terapia manual y técnicas de liberación miofascial. Utiliza un enfoque integral para aliviar el dolor musculoesquelético y mejorar la movilidad.",
+"edad": 35,
+"horarios": [
+"Martes y Jueves: 14:00-20:00",
+"Sábado: 10:00-14:00"
+]
+},
+{
+"id": 9,
+"nombre": "Dr. Javier López",
+"imagen": "url_imagen_javier_lopez",
+"biografia": "Especialista en fisioterapia deportiva y readaptación física. Trabaja con atletas de alto rendimiento y personas que buscan mejorar su condición física después de una lesión.",
+"edad": 40,
+"horarios": [
+"Lunes a Viernes: 10:00-18:00"
+]
+},
+{
+"id": 10,
+"nombre": "Dra. Camila Flores",
+"imagen": "url_imagen_camila_flores",
+"biografia": "Fisioterapeuta especializada en tratamientos de suelo pélvico. Ayuda a mujeres y hombres con problemas de incontinencia, disfunciones sexuales y dolor pélvico.",
+"edad": 36,
+"horarios": [
+"Lunes, Miércoles y Viernes: 14:00-20:00"
+]
+},
+{
+"id": 11,
+"nombre": "Dr. Alejandro Ruiz",
+"imagen": "url_imagen_alejandro_ruiz",
+"biografia": "Experto en fisioterapia oncológica. Brinda apoyo y rehabilitación a pacientes con cáncer durante y después del tratamiento para mejorar su calidad de vida.",
+"edad": 44,
+"horarios": [
+"Martes y Jueves: 8:00-14:00",
+"Sábado: 9:00-13:00"
+]
+},
+{
+"id": 12,
+"nombre": "Dra. Valentina Rojas",
+"imagen": "url_imagen_valentina_rojas",
+"biografia": "Fisioterapeuta especializada en terapia acuática. Utiliza el agua como medio terapéutico para tratar lesiones, dolores crónicos y mejorar la movilidad.",
+"edad": 37,
+"horarios": [
+"Lunes, Miércoles y Viernes: 9:00-15:00"
+]
+},
+{
+"id": 13,
+"nombre": "Dr. Martín Gutiérrez",
+"imagen": "url_imagen_martin_gutierrez",
+"biografia": "Experto en fisioterapia respiratoria. Ayuda a pacientes con enfermedades pulmonares crónicas y trastornos respiratorios a mejorar su capacidad respiratoria y calidad de vida.",
+"edad": 43,
+"horarios": [
+"Martes y Jueves: 14:00-20:00",
+"Sábado: 10:00-14:00"
+]
+}
+  ]
+}

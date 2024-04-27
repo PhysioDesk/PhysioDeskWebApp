@@ -1,0 +1,55 @@
+.mat-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#page {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.mat-form-field {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.mat-row:hover {
+  background-color: #f2f2f2;
+}
+
+.mat-row.mat-no-data-row {
+  font-style: italic;
+}
+
+.mat-paginator {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

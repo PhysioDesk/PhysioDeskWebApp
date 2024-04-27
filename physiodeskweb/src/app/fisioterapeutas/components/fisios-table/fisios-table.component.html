@@ -1,0 +1,47 @@
+<mat-toolbar color="primary">
+  <span>Fisioterapeutas</span>
+</mat-toolbar>
+
+
+<div class="container" role="main" aria-labelledby="page">
+  <h1 id="page">FISIOTERAPEUTAS</h1>
+
+  <mat-form-field color="accent" role="search">
+    <mat-label>Search</mat-label>
+    <input matInput (keyup)="applyFilter($event)" #input aria-label="Search characters">
+  </mat-form-field>
+
+  <table mat-table [dataSource]="dataSource" multiTemplateDataRows role="grid" aria-labelledby="tableInfo">
+
+    <ng-container matColumnDef="nombre">
+      <th mat-header-cell *matHeaderCellDef role="columnheader">Name</th>
+      <td mat-cell *matCellDef="let fisio" role="gridcell">{{ fisio.nombre }}</td>
+    </ng-container>
+    <ng-container matColumnDef="imagen">
+      <th mat-header-cell *matHeaderCellDef role="columnheader">Imagen</th>
+      <td mat-cell *matCellDef="let fisio" role="gridcell">
+        <img [src]="fisio.imagen" [alt]="fisio.nombre + ' image'" width="100" height="100">
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="biografia">
+      <th mat-header-cell *matHeaderCellDef role="columnheader">Biografia</th>
+      <td mat-cell *matCellDef="let fisio" role="gridcell">{{ fisio.biografia }}</td>
+    </ng-container>
+    <ng-container matColumnDef="edad">
+      <th mat-header-cell *matHeaderCellDef role="columnheader">Edad</th>
+      <td mat-cell *matCellDef="let fisio" role="gridcell">{{ fisio.edad }}</td>
+    </ng-container>
+    <ng-container matColumnDef="horarios">
+      <th mat-header-cell *matHeaderCellDef role="columnheader">Horarios</th>
+      <td mat-cell *matCellDef="let fisio" role="gridcell">{{ fisio.horarios }}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns" role="row"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" role="row"
+        (click)="getRow(row)" tabindex="0" aria-label="Details of the row"></tr>
+    <tr class="mat-row" *matNoDataRow role="row">
+      <td class="mat-cell" role="gridcell" colspan="5">No characters found matching "{{ input.value }}"</td>
+    </tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 15, 20]" showFirstLastButtons aria-label="Select page of results"></mat-paginator>
+</div>

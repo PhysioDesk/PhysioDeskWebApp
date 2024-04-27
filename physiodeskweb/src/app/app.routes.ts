@@ -10,6 +10,8 @@ export const routes: Routes = [
   {path: 'home',component: MainContainerComponent},
   {path: 'personalData',component:PersonalDataContainerComponent },
   {path: 'problems',component:ProblemContainerComponent },
+  {path: '', pathMatch: 'full', redirectTo: 'home'},
+  {path: '**', pathMatch: 'full', redirectTo: 'home'}
 
 
 

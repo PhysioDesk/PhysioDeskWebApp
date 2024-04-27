@@ -1,13 +1,14 @@
 <!-- main-container.component.html -->
 
 <!-- main-container.component.html -->
-
-<div *ngIf="rutaActual !== '/personalData' && rutaActual !== '/problems'">
+<!--
+<div *ngIf="rutaActual === '/home'">
   <a href="/personalData">EDITAR INFORMACION</a>
   <app-sidebar></app-sidebar>
 </div>
 
 <div *ngIf="rutaActual === '/personalData'">
+  <app-sidebar></app-sidebar>
   <app-card-welcome></app-card-welcome>
   <app-personal-data-container></app-personal-data-container>
 </div>
@@ -15,3 +16,8 @@
 <div *ngIf="rutaActual === '/problems'">
   <app-problem-container></app-problem-container>
 </div>
+-->
+<a href="/personalData">EDITAR INFORMACION</a>
+<app-fisios-table></app-fisios-table>
+<app-sidebar></app-sidebar>
+

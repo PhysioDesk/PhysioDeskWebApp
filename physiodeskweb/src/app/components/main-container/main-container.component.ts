@@ -6,6 +6,7 @@ import {NgIf} from "@angular/common";
 import {CardWelcomeComponent} from "../../public/card-welcome/card-welcome.component";
 import {PersonalDataContainerComponent} from "../personal-data-container/personal-data-container.component";
 import {ProblemContainerComponent} from "../problem-container/problem-container.component";
+import {FisiosTableComponent} from "../../fisioterapeutas/components/fisios-table/fisios-table.component";
 @Component({
   selector: 'app-main-container',
   standalone: true,
@@ -15,7 +16,8 @@ import {ProblemContainerComponent} from "../problem-container/problem-container.
     NgIf,
     CardWelcomeComponent,
     PersonalDataContainerComponent,
-    ProblemContainerComponent
+    ProblemContainerComponent,
+    FisiosTableComponent
   ],
   templateUrl: './main-container.component.html',
   styleUrl: './main-container.component.css',
@@ -31,4 +33,6 @@ export class MainContainerComponent implements OnInit {
       }
     });
   }
+
+
 }
