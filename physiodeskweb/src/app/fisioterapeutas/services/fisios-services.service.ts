@@ -13,8 +13,8 @@ export class FisiosServicesService {
   constructor(private http: HttpClient) {
   }
 
-  getFisios(index: any): Observable<any[]> {
-    return this.http.get<any[]>(`${this.baseUrl}/fisios/${index}`);
+  getFisios(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.baseUrl}/fisios/`);
   }
 
 }

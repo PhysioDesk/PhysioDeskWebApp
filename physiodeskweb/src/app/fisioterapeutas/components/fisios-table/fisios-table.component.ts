@@ -42,8 +42,8 @@
       }
 
     getFisios() {
-      for (let i = 0; i < 10; i++) {
-        this.fisiosServices.getFisios(i).subscribe(
+
+        this.fisiosServices.getFisios().subscribe(
           (res) => {
             this.dataSource.data = res;
             this.dataSource.paginator = this.paginator;
@@ -52,7 +52,7 @@
             console.log(error);
           }
         );
-      }
+
     }
       applyFilter(event: Event) {
         const inputElement = event.target as HTMLInputElement;

@@ -1,17 +1,15 @@
-.sidebar-container {
+.main-container {
   display: flex;
-  align-items: center;
+  height: 100%; /* Ajustar la altura del contenedor principal al 100% del alto de la ventana del navegador */
 }
 
-.app-sidebar {
-  width: 200px; /* Ancho del sidebar */
-  height: 100%; /* Altura del sidebar */
+.sidebar-container {
+  width: 300px; /* Ancho del sidebar */
   background-color: #f0f0f0; /* Color de fondo del sidebar */
-  padding: 20px; /* Espacio interior del sidebar */
 }
 
-.edit-link {
-  margin-left: 20px; /* Espacio entre el sidebar y el enlace */
-  text-decoration: none; /* Quitar subrayado del enlace */
-  color: #333; /* Color del texto del enlace */
+.content-container {
+  flex: 1; /* El contenido principal ocupa todo el espacio restante */
+  background-color: #ffffff; /* Color de fondo del contenido principal */
 }
+
