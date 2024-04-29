@@ -2,72 +2,77 @@
   display: flex;
   justify-content: space-between; /* Alinea los elementos a los extremos */
   align-items: center; /* Alinea verticalmente */
+  text-decoration: none !important; /* Elimina el subrayado */
+  width: 100%;
 }
 
 .logo {
   display: flex; /* Utiliza flexbox para colocar el logo y el título lado a lado */
   align-items: center; /* Alinea verticalmente */
+  margin-right: auto; /* Empuja los elementos de la izquierda hacia la derecha */
 }
 
 .logo img {
   max-width: 100px; /* Ancho máximo del logo */
   height: auto; /* Altura ajustada automáticamente */
-  margin-right: 10px; /* Espacio entre el logo y el título */
+  margin-right: 15px; /* Espacio entre el logo y el título */
 }
 
-.activeSessions{
+.activeSessions {
   display: flex;
   align-items: center;
-
 }
 
-.activeSessions img{
+.activeSessions img {
   max-width: 100px;
   height: auto;
   margin-right: 10px;
 }
 
-.ergonomicZone{
+.ergonomicZone {
   display: flex;
   align-items: center;
-
 }
 
-.ergonomicZone img{
+.ergonomicZone img {
   max-width: 100px;
   height: auto;
   margin-right: 10px;
 }
 
-.notifications{
+.notifications {
   display: flex;
   align-items: center;
-
 }
 
-.notifications img{
+.notifications img {
   max-width: 100px;
   height: auto;
   margin-right: 10px;
 }
 
-.user{
+.user {
   display: flex;
   align-items: center;
-
 }
 
-.user img{
-  max-width: 90px;
+.user img {
+  max-width: 3vw;
   height: auto;
   margin-right: 10px;
 }
+
+/* Resto del CSS... */
 
 
 
 .titulo {
   color: #11B584; /* Color del título */
   font-family: Montserrat, sans-serif; /* Fuente del título */
+  font-size: 2vw;
+  font-weight: bold; /* Aplica negrita a todos los enlaces dentro del sidebar */
+  text-decoration: none; /* Elimina el subrayado */
+
 }
 
 
@@ -79,7 +84,7 @@
 }
 
 .nav ul li {
-  margin-right: 200px;
+  margin-left: 100px;
 }
 
 .nav ul li:last-child {
@@ -95,4 +100,7 @@
 
 .nav ul li a.active {
   font-weight: bold;
+}
+.titulo a {
+  text-decoration: none; /* Eliminar subrayado */
 }

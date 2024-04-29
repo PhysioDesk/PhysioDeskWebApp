@@ -9,7 +9,8 @@
 }
 
 .content-container {
-  flex: 1; /* El contenido principal ocupa todo el espacio restante */
-  background-color: #ffffff; /* Color de fondo del contenido principal */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
