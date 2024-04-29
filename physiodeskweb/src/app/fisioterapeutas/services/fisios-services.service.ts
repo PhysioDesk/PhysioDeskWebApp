@@ -8,10 +8,13 @@ import {Observable} from "rxjs";
 })
 
 export class FisiosServicesService {
-  baseUrl:string=environment.baseURL;
-  constructor(private http:HttpClient) {}
+  baseUrl: string = environment.baseURL;
 
-  getFisios(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.baseUrl}/fisios`);
+  constructor(private http: HttpClient) {
   }
+
+  getFisios(index: any): Observable<any[]> {
+    return this.http.get<any[]>(`${this.baseUrl}/fisios/${index}`);
+  }
+
 }
