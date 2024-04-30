@@ -16,40 +16,19 @@ export class FisioDetailComponent {
   fisioImage = '';
 
 
-<<<<<<< Updated upstream
-
-
-  constructor(private FisiosServicesService: FisiosServicesService, private activatedRouter: ActivatedRoute) {
-    this.activatedRouter.params.subscribe(
-      params => {
-        this.getFisios();
-=======
   constructor(private FisiosServicesService: FisiosServicesService, private activatedRouter: ActivatedRoute, private router: Router) {
     this.activatedRouter.params.subscribe(
       params => {
         this.getFisio(params['id']);
->>>>>>> Stashed changes
       }
     );
   }
 
-<<<<<<< Updated upstream
-  getFisios(){
-    this.FisiosServicesService.getFisios().subscribe(
-      res =>
-      {
-        console.log(res);
-        this.nombre = res;
-        this.imagen = this.nombre.imagen;
-        this.horarios = this.nombre.horarios;
-
-=======
   getFisio(id: any) {
     this.FisiosServicesService.getFisio(id).subscribe(
       (res: any) => {
         this.fisio = res;
         this.fisioImage = this.fisio.sprites.front_shiny;
->>>>>>> Stashed changes
       },
     );
   }
@@ -77,7 +56,6 @@ export class FisioDetailComponent {
 
 
 }
-
 
 
 
