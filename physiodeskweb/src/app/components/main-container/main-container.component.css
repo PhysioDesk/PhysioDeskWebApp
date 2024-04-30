@@ -1,3 +1,4 @@
+
 .main-container {
   display: flex;
   height: 100%; /* Ajustar la altura del contenedor principal al 100% del alto de la ventana del navegador */
@@ -11,13 +12,6 @@
 
 .content-container {
   display: grid;
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-  grid-template-columns: 1fr;
-  gap: 20px;
-=======
-=======
->>>>>>> Stashed changes
   grid-template-areas: "titulo titulo"
                         "text text"
                         "info imagen"
@@ -28,10 +22,6 @@
   grid-auto-rows: min-content; /* Ajusta automáticamente la altura de las filas según su contenido */
 
 
-<<<<<<< Updated upstream
->>>>>>> 1efe935619f69280064cf8003205f2388b467120
-=======
->>>>>>> Stashed changes
 }
 
 .titulo {
@@ -82,13 +72,13 @@
 
 .button {
 
-    padding: 10px 20px;
-    background-color: #11B584;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-right:auto;
-    margin-left:auto;
+  padding: 10px 20px;
+  background-color: #11B584;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right:auto;
+  margin-left:auto;
 
 }
 .content-ul{
@@ -107,7 +97,7 @@
 }
 
 .problem {
-grid-area: problem;
+  grid-area: problem;
   grid-column: 1 / 2; /* Ocupa la segunda columna */
 
 }
@@ -159,6 +149,3 @@ grid-area: problem;
     margin-top: 2vw; /* Margen superior más pequeño en pantallas más pequeñas */
   }
 }
-
-
-

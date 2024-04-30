@@ -4,10 +4,7 @@
   margin-left: 4vw;
 }
 
-.sidebar-container {
-  width: 300px; /* Ancho del sidebar */
-  background-color: #f0f0f0; /* Color de fondo del sidebar */
-}
+
 
 .content-container {
   display: grid;
