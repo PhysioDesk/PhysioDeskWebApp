@@ -9,8 +9,83 @@
 }
 
 .content-container {
-  flex: 1; /* El contenido principal ocupa todo el espacio restante */
-  background-color: #ffffff; /* Color de fondo del contenido principal */
+  display: grid;
+  grid-template-areas: "titulo titulo"
+                        "form imagen"
+                        "location location"
+                        "adress adress";
+
+  grid-gap:2vw;
+  margin-top:2vw;
+  grid-auto-rows: min-content; /* Ajusta automáticamente la altura de las filas según su contenido */
+
+
+}
+.edit-information{
+  margin-top: 1vw;
+}
+
+.titulo {
+  margin-top: 2vw;
+  grid-area: titulo;
+}
+
+.titulo-content {
+  color: #092149;
+  font-size: 2vw;
 }
 
 
+
+.input-container {
+  margin-bottom: 20px;
+  margin-top: 2vw;
+  grid-area: form;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  padding: 8px;
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder {
+  color: #999;
+}
+
+.img-editInfo {
+  margin-left: 3vw;
+  grid-area: imagen;
+}
+
+.button {
+
+  padding: 10px 20px;
+  background-color: #11B584;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right:auto;
+  margin-left:auto;
+
+}
