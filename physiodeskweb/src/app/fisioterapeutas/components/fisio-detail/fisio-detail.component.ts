@@ -18,16 +18,18 @@ export class FisioDetailComponent {
   horarios: any='';
 
 
+
+
   constructor(private FisiosServicesService: FisiosServicesService, private activatedRouter: ActivatedRoute) {
     this.activatedRouter.params.subscribe(
       params => {
-        this.getFisios(params['id']);
+        this.getFisios();
       }
     );
   }
 
-  getFisios(id: any){
-    this.FisiosServicesService.getFisios(id).subscribe(
+  getFisios(){
+    this.FisiosServicesService.getFisios().subscribe(
       res =>
       {
         console.log(res);

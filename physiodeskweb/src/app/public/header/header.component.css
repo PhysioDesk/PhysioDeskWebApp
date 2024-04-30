@@ -2,8 +2,12 @@
   display: flex;
   justify-content: space-between; /* Alinea los elementos a los extremos */
   align-items: center; /* Alinea verticalmente */
+<<<<<<< HEAD
   text-decoration: none !important; /* Elimina el subrayado */
   width: 100%;
+=======
+  width: auto;
+>>>>>>> 1efe935619f69280064cf8003205f2388b467120
 }
 
 .logo {
@@ -13,9 +17,13 @@
 }
 
 .logo img {
-  max-width: 100px; /* Ancho máximo del logo */
+  max-width: 70px; /* Ancho máximo del logo */
   height: auto; /* Altura ajustada automáticamente */
+<<<<<<< HEAD
   margin-right: 15px; /* Espacio entre el logo y el título */
+=======
+  margin-right: 1vw; /* Espacio entre el logo y el título */
+>>>>>>> 1efe935619f69280064cf8003205f2388b467120
 }
 
 .activeSessions {
@@ -23,10 +31,15 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
 .activeSessions img {
   max-width: 100px;
+=======
+.activeSessions img{
+  max-width: 70px; /* Ancho máximo del logo */
+>>>>>>> 1efe935619f69280064cf8003205f2388b467120
   height: auto;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
 .ergonomicZone {
@@ -34,10 +47,15 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
 .ergonomicZone img {
   max-width: 100px;
+=======
+.ergonomicZone img{
+  max-width: 70px; /* Ancho máximo del logo */
+>>>>>>> 1efe935619f69280064cf8003205f2388b467120
   height: auto;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
 .notifications {
@@ -45,10 +63,15 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
 .notifications img {
   max-width: 100px;
+=======
+.notifications img{
+  max-width: 70px; /* Ancho máximo del logo */
+>>>>>>> 1efe935619f69280064cf8003205f2388b467120
   height: auto;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
 .user {
@@ -56,10 +79,15 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
 .user img {
   max-width: 3vw;
+=======
+.user img{
+  max-width: 70px; /* Ancho máximo del logo */
+>>>>>>> 1efe935619f69280064cf8003205f2388b467120
   height: auto;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
 /* Resto del CSS... */
@@ -69,10 +97,15 @@
 .titulo {
   color: #11B584; /* Color del título */
   font-family: Montserrat, sans-serif; /* Fuente del título */
+<<<<<<< HEAD
   font-size: 2vw;
   font-weight: bold; /* Aplica negrita a todos los enlaces dentro del sidebar */
   text-decoration: none; /* Elimina el subrayado */
 
+=======
+  font-weight: bold;
+  font-size: 2vw;
+>>>>>>> 1efe935619f69280064cf8003205f2388b467120
 }
 
 
@@ -84,7 +117,11 @@
 }
 
 .nav ul li {
+<<<<<<< HEAD
   margin-left: 100px;
+=======
+  margin-right: 10vw;
+>>>>>>> 1efe935619f69280064cf8003205f2388b467120
 }
 
 .nav ul li:last-child {
