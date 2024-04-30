@@ -1,0 +1,67 @@
+.problem-container {
+  display: flex;
+  height: 100%; /* Ajustar la altura del contenedor principal al 100% del alto de la ventana del navegador */
+  margin-left: 4vw;
+}
+
+.content-container {
+  display: grid;
+  grid-template-areas: "titulo titulo"
+                        "problemregistered problemregistered"
+                        "problemname problemname"
+                        "vacio boton2";
+
+  grid-gap:2vw;
+  margin-top:2vw;
+  grid-auto-rows: min-content; /* Ajusta automáticamente la altura de las filas según su contenido */
+
+
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.problem {
+  grid-area: problemregistered;
+  color: #092149;
+  font-size: 2.5vw;
+
+}
+
+.problem-nombres {
+  margin-top: 3vw;
+  grid-area:problemname;
+  display:grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(1,1fr);
+}
+
+.problem-name1 {
+  grid-area: problemname;
+  grid-row: 1/2;
+  grid-column: 1/1;
+}
+.problem-name2 {
+  grid-area: problemname;
+  grid-row: 2/3;
+  grid-column: 1/1;
+
+}
+
+.boton {
+  grid-area: problemname;
+
+}
+
+.button {
+
+  padding: 10px 20px;
+  background-color: #11B584;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right:auto;
+  margin-left:auto;
+
+}

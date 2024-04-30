@@ -1,6 +1,8 @@
+
 .main-container {
   display: flex;
   height: 100%; /* Ajustar la altura del contenedor principal al 100% del alto de la ventana del navegador */
+  margin-left: 4vw;
 }
 
 .sidebar-container {
@@ -9,7 +11,141 @@
 }
 
 .content-container {
-  flex: 1; /* El contenido principal ocupa todo el espacio restante */
-  background-color: #ffffff; /* Color de fondo del contenido principal */
+  display: grid;
+  grid-template-areas: "titulo titulo"
+                        "text text"
+                        "info imagen"
+                        "problem problem";
+
+  grid-gap:2vw;
+  margin-top:2vw;
+  grid-auto-rows: min-content; /* Ajusta automáticamente la altura de las filas según su contenido */
+
+
 }
 
+.titulo {
+  grid-area: titulo;
+  color: #092149;
+  font-size: 2.5vw;
+}
+
+.nombre {
+  font-size: 1.6vw;
+  font-weight: bold;
+}
+
+.nombre2{
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.texto-amy {
+  grid-area: text;
+  color: #092149;
+  margin-bottom: 3vw;
+  font-size: 1vw;
+}
+
+.info {
+  grid-area: info;
+  color: #092149;
+
+}
+
+.imagen-info {
+  grid-area: imagen;
+
+}
+
+.img-info{
+  width: 50%;
+  height:auto;
+}
+
+.boton {
+  grid-area: info;
+  justify-items: center;
+  align-self: end; /* Alinea el botón en la parte inferior del grid-area */
+  justify-self: end; /* Alinea el botón a la derecha dentro del grid-area */
+}
+
+.button {
+
+  padding: 10px 20px;
+  background-color: #11B584;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right:auto;
+  margin-left:auto;
+
+}
+.content-ul{
+  color:#898686;
+  margin-top: 2vw;
+}
+.button:hover {
+  background-color: #0B7E52;
+}
+
+.problem-container {
+  margin-top: 3vw;
+  grid-area:problem;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.problem {
+  grid-area: problem;
+  grid-column: 1 / 2; /* Ocupa la segunda columna */
+
+}
+
+.result-problem {
+  grid-area:problem;
+  grid-column: 2 / 3; /* Ocupa la segunda columna */
+
+}
+.boton-problem{
+  grid-area:problem;
+  grid-column: 3 / 4; /* Ocupa la segunda columna */
+
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+  }
+
+  .sidebar-container {
+    width: 100%; /* Ancho completo en pantallas más pequeñas */
+  }
+
+  .titulo {
+    font-size: 4vw; /* Tamaño de fuente más grande en pantallas más pequeñas */
+  }
+
+  .nombre,
+  .nombre2 {
+    font-size: 3vw; /* Tamaño de fuente más grande en pantallas más pequeñas */
+  }
+
+  .texto-amy {
+    font-size: 2vw; /* Tamaño de fuente más grande en pantallas más pequeñas */
+    margin-bottom: 2vw; /* Margen inferior más pequeño en pantallas más pequeñas */
+  }
+
+  .button {
+    padding: 8px 16px; /* Reducir el padding del botón en pantallas más pequeñas */
+    font-size: 2vw; /* Tamaño de fuente más grande en pantallas más pequeñas */
+  }
+
+  .content-ul {
+    margin-top: 1vw; /* Margen superior más pequeño en pantallas más pequeñas */
+  }
+
+  .problem-container {
+    margin-top: 2vw; /* Margen superior más pequeño en pantallas más pequeñas */
+  }
+}

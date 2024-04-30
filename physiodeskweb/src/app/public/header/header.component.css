@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between; /* Alinea los elementos a los extremos */
   align-items: center; /* Alinea verticalmente */
+  width: auto;
 }
 
 .logo {
@@ -10,9 +11,9 @@
 }
 
 .logo img {
-  max-width: 100px; /* Ancho máximo del logo */
+  max-width: 70px; /* Ancho máximo del logo */
   height: auto; /* Altura ajustada automáticamente */
-  margin-right: 10px; /* Espacio entre el logo y el título */
+  margin-right: 1vw; /* Espacio entre el logo y el título */
 }
 
 .activeSessions{
@@ -22,9 +23,9 @@
 }
 
 .activeSessions img{
-  max-width: 100px;
+  max-width: 70px; /* Ancho máximo del logo */
   height: auto;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
 .ergonomicZone{
@@ -34,9 +35,9 @@
 }
 
 .ergonomicZone img{
-  max-width: 100px;
+  max-width: 70px; /* Ancho máximo del logo */
   height: auto;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
 .notifications{
@@ -46,9 +47,9 @@
 }
 
 .notifications img{
-  max-width: 100px;
+  max-width: 70px; /* Ancho máximo del logo */
   height: auto;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
 .user{
@@ -58,9 +59,9 @@
 }
 
 .user img{
-  max-width: 90px;
+  max-width: 70px; /* Ancho máximo del logo */
   height: auto;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
 
@@ -68,6 +69,8 @@
 .titulo {
   color: #11B584; /* Color del título */
   font-family: Montserrat, sans-serif; /* Fuente del título */
+  font-weight: bold;
+  font-size: 2vw;
 }
 
 
@@ -79,7 +82,7 @@
 }
 
 .nav ul li {
-  margin-right: 200px;
+  margin-right: 10vw;
 }
 
 .nav ul li:last-child {
