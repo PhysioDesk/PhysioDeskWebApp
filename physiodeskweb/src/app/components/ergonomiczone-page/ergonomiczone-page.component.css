@@ -1,0 +1,45 @@
+.header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.title-ergonomic {
+    position: absolute;
+    left: 40%;
+    font-size: 24px;
+}
+
+.header a {
+    margin-left: auto;
+    font-size: 24px;
+    color: transparent;
+    text-decoration: none;
+}
+
+.header a .cart-icon{
+    color: black;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.title-decor {
+    width: 2px;
+    height: 30px;
+    background-color: #11B584; /* Color verde */
+    margin-right: 10px;
+}
+
+h2 {
+    font-size: 30px; /* Tamaño del título */
+    color: #11B584; /* Color del texto */
+    margin: 0;
+    font-weight: bold;
+}

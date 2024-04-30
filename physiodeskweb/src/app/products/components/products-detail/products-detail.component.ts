@@ -2,13 +2,15 @@ import { Component } from '@angular/core';
 import {MatCard, MatCardContent, MatCardImage} from "@angular/material/card";
 import {ActivatedRoute} from "@angular/router";
 import {ProductsService} from "../../services/products.service";
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-products-detail',
   standalone: true,
   imports: [MatCard,
     MatCardContent,
-    MatCardImage],
+    MatCardImage, MatCardModule, MatButtonModule],
   templateUrl: './products-detail.component.html',
   styleUrl: './products-detail.component.css'
 })

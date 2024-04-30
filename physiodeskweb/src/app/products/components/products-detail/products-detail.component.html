@@ -1,10 +1,21 @@
-<mat-card class="example card" style="width: 400px; margin: 150px auto;" role="article">
-    <div class="example-header-image">
-        <img mat-card-image src="{{ productImage }}" alt="{{ product.name }} image" style="width: 100%">
-    </div>
-    <mat-card-content class="container" style="width: 180px; margin: 0 auto;">
-        <p class="name-client">
-            {{product.name}}
-        </p>
-    </mat-card-content>
-</mat-card>
+<h3>Producto Seleccionado</h3>
+
+<div class="product-container">
+    <img src="{{product.imagen}}" alt="product image" class="product-image">
+
+    <mat-card class="product-card">
+        <mat-card-header>
+            <mat-card-title>{{ product.name }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>Descripción: {{ product.descripcion }}</p>
+            <p>Rating: {{ product.rating }}</p>
+            <p>Dimensiones: {{ product.Dimensiones }}</p>
+            <p>Color: {{ product.Colores }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-flat-button color="primary" class="large-button">ADD TO CART</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
