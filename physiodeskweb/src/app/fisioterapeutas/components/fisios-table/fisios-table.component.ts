@@ -66,7 +66,7 @@
       }
 
       getRow(row: any){
-        this.router.navigateByUrl(`/fisio/${row.name}`);
+        this.router.navigateByUrl(`/fisios/${row.id}`);
       }
 
   }

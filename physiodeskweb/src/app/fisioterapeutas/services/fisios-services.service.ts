@@ -17,4 +17,8 @@ export class FisiosServicesService {
     return this.http.get<any[]>(`${this.baseUrl}/fisios/`);
   }
 
+  getFisio(index: any) {
+    return this.http.get<any>(`${this.baseUrl}/fisios/${index}`);
+  }
+
 }

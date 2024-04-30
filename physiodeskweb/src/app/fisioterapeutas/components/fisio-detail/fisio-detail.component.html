@@ -1,11 +1,41 @@
-<mat-card class="example-card" style="width:400px; margin:150px auto;" role="article" aria-label="Información detallada del Pokémon">
+<!-- Botón Confirmar hora -->
+<button class="confirmButton" (click)="handleConfirmHourClick()" [disabled]="!isHorarioSelected" style="position: fixed; bottom: 10px; right: 10px; background-color: #11B584; color: white;">CONFIRM HOUR</button>
+
+
+<mat-card class="example card" style="width: 400px; height:100px; margin-left: 150px; margin-top: 200px; " role="article">
   <div class="example-header-image">
+<<<<<<< Updated upstream
   <img mat-card-image src="{{}}" alt="{{}} image" style="width:100%">
+=======
+    <img mat-card-image src="{{ fisio.imagen }}" alt="{{ fisio.nombre }} image" style="width: 100%">
+>>>>>>> Stashed changes
   </div>
-  <mat-card-content class="container" style="width:180px; margin:0 auto;">
-    <p class="name-client">
-      {{}}
-      <span >{{}}</span>
-    </p>
+</mat-card>
+
+<mat-card class="descripcion" style="width: 300px; margin-left: 560px; margin-top: -105px; border: none;">
+  <h1 class="name-client">
+    {{fisio.nombre}}
+  </h1>
+  <h1>{{fisio.edad}} años</h1>
+  <h4>Biografía:</h4>
+  <h4>{{fisio.biografia}}</h4>
+</mat-card>
+
+<!-- Línea vertical -->
+<div style="border-left: 1px solid black; height: 500px; position: absolute; left: 1200px; top: 270px;"></div>
+
+<mat-card class="ejemplo-card" style="width: 250px; margin-left: 940px; margin-top:-275px;">
+  <mat-card-header>
+    <h2>Horarios disponibles</h2>
+  </mat-card-header>
+  <mat-card-content style="margin-bottom: 60px;"> <!-- Ajuste aquí -->
+    <button id="horario1" class="horario" (click)="handleHorarioClick($event)" style="width:100px; height: 50px; margin-left:50px; margin-top: 20px; border: none; background-color: #A6C03A; border-radius: 20px;">
+      <a>{{fisio.horarios[0]}}</a>
+    </button>
+    <button id="horario2" class="horario" (click)="handleHorarioClick($event)" style="width:100px; height: 50px; margin-left:50px; margin-top: 20px; border: none; background-color: #A6C03A; border-radius: 20px;">
+      <a>{{fisio.horarios[1]}}</a>
+    </button>
   </mat-card-content>
 </mat-card>
+
+
