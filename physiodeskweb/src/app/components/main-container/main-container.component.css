@@ -11,10 +11,13 @@
 
 .content-container {
   display: grid;
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   grid-template-columns: 1fr;
   gap: 20px;
 =======
+=======
+>>>>>>> Stashed changes
   grid-template-areas: "titulo titulo"
                         "text text"
                         "info imagen"
@@ -25,7 +28,10 @@
   grid-auto-rows: min-content; /* Ajusta automáticamente la altura de las filas según su contenido */
 
 
+<<<<<<< Updated upstream
 >>>>>>> 1efe935619f69280064cf8003205f2388b467120
+=======
+>>>>>>> Stashed changes
 }
 
 .titulo {
