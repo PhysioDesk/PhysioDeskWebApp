@@ -13,6 +13,8 @@ import {ConfirmacionComponentComponent} from "./fisioterapeutas/components/Confi
 import {ShoppingCartDetailComponent} from "./products/components/shopping-cart-detail/shopping-cart-detail.component";
 import {PaymentInformationComponent} from "./products/components/payment-information/payment-information.component";
 import {PurchaseFinishedComponent} from "./products/components/purchase-finished/purchase-finished.component";
+import {AddProblemContainerComponent} from "./components/add-problem-container/add-problem-container.component";
+import {ProblemasTableComponent} from "./problemas/components/problemas-table/problemas-table.component";
 
 
 export const routes: Routes = [

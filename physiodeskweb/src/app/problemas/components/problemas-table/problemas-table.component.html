@@ -1,0 +1,30 @@
+<form (submit)="onSubmit()" #problemForm='ngForm'>
+  <mat-form-field><input matInput placeholder="Nombre" name="Name" required [(ngModel)]="problemData.name"></mat-form-field>
+
+
+  @if(isEditMode){
+    <button mat-button color="primary">Actualizar</button>
+    <button mat-button color="warn" (click)="cancelEdit()">Cancelar</button>
+  } @else {
+    <button mat-button color="primary">Agregar</button>
+  }
+</form>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <ng-container matColumnDef="id"><th mat-header-cell *matHeaderCellDef> Id </th><td mat-cell *matCellDef="let data">{{data.id}}</td></ng-container>
+  <ng-container matColumnDef="name"><th mat-header-cell *matHeaderCellDef> Nombre </th><td mat-cell *matCellDef="let data">{{data.name}}</td></ng-container>
+
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef> Actions </th>
+    <td mat-cell *matCellDef="let data">
+      <a mat-raised-button color="accent" (click)="editItem(data)"><mat-icon>edit</mat-icon></a>
+      <a mat-raised-button color="warn" (click)="deleteItem(data.id)"><mat-icon>delete</mat-icon></a>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<mat-paginator [pageSize]="10" [pageSizeOptions]="[3, 5,8]"  ></mat-paginator>
+

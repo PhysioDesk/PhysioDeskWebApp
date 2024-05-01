@@ -17,10 +17,9 @@
                         "info imagen"
                         "problem problem";
 
-  grid-gap:2vw;
-  margin-top:2vw;
+  grid-gap:1vw;
+  margin-top:1vw;
   grid-auto-rows: min-content; /* Ajusta automáticamente la altura de las filas según su contenido */
-
 
 }
 
@@ -35,6 +34,10 @@
   font-weight: bold;
 }
 
+.content-texto {
+  text-align: center;
+}
+
 .nombre2{
   font-size: 2vw;
   font-weight: bold;
@@ -44,13 +47,14 @@
   grid-area: text;
   color: #092149;
   margin-bottom: 3vw;
-  font-size: 1vw;
+  font-size: 18px;
 }
 
 .info {
   grid-area: info;
   color: #092149;
-
+  border-top: 1px solid #092149;
+  padding-top: 1.5vw;
 }
 
 .imagen-info {
@@ -98,7 +102,8 @@
 
 .problem {
   grid-area: problem;
-  grid-column: 1 / 2; /* Ocupa la segunda columna */
+  grid-column: 1 / 2; /* Ocupa la primera columna */
+  font-weight: bold;
 
 }
 
@@ -109,7 +114,7 @@
 }
 .boton-problem{
   grid-area:problem;
-  grid-column: 3 / 4; /* Ocupa la segunda columna */
+  grid-column: 3 / 4; /* Ocupa la tercera columna */
 
 }
 
