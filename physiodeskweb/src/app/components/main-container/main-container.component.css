@@ -17,10 +17,9 @@
                         "info imagen"
                         "problem problem";
 
-  grid-gap:2vw;
-  margin-top:2vw;
+  grid-gap:1vw;
+  margin-top:1vw;
   grid-auto-rows: min-content; /* Ajusta automáticamente la altura de las filas según su contenido */
-
 
 }
 

@@ -1,0 +1,32 @@
+{
+  "problems": [
+    {
+      "id": "1",
+      "name": "Dolor de Cadera por Mala Postura"
+    },
+    {
+      "id": "2",
+      "name": "Síndrome del Túnel Carpiano por Uso Excesivo del Teclado"
+    },
+    {
+      "id": "3",
+      "name": "Dolor de Cuello por Uso Prolongado del Teléfono"
+    },
+    {
+      "id": "4",
+      "name": "Dolor de Espalda por Levantamiento de Objetos Pesados"
+    },
+    {
+      "id": "5",
+      "name": "Dolor de Muñeca por Uso Incorrecto del Mouse"
+    },
+    {
+      "id": "6",
+      "name": "Dolor de Dedos"
+    },
+    {
+      "id": "7",
+      "name": "Mala Postura"
+    }
+  ]
+}

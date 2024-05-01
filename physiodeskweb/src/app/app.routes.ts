@@ -10,29 +10,36 @@ import {ProductsDetailComponent} from "./products/components/products-detail/pro
 import {ProductsTableComponent} from "./products/components/products-table/products-table.component";
 import {FisioDetailComponent} from "./fisioterapeutas/components/fisio-detail/fisio-detail.component";
 import {ConfirmacionComponentComponent} from "./fisioterapeutas/components/ConfirmacionComponent/confirmacion-component.component";
+import {AddProblemContainerComponent} from "./components/add-problem-container/add-problem-container.component";
+import {ProblemasTableComponent} from "./problemas/components/problemas-table/problemas-table.component";
 
 
 export const routes: Routes = [
-
-  {path: 'home',component: MainContainerComponent},
-  {path: 'personalData',component:PersonalDataContainerComponent },
-  {path: 'problems',component:ProblemContainerComponent },
-  {path: 'fisios', component: FisioterapeutasPageComponent,
+  { path: 'home', component: MainContainerComponent },
+  { path: 'personalData', component: PersonalDataContainerComponent },
+  { path: 'problemsEdit', component: AddProblemContainerComponent,
     children: [
-      {path: '', component: FisiosTableComponent},
-      {path: ':id', component: FisioDetailComponent}
+      {path:'',component: ProblemasTableComponent},
+    ]},
+  { path: 'problems', component: ProblemContainerComponent ,
+    children: [
+      {path:'',component: ProblemasTableComponent},
+    ]},
+  { path: 'fisios', component: FisioterapeutasPageComponent,
+    children: [
+      { path: '', component: FisiosTableComponent },
+      { path: ':id', component: FisioDetailComponent }
     ]
   },
-  {path: 'products', component: ErgonomiczonePageComponent,
+  { path: 'products', component: ErgonomiczonePageComponent,
     children: [
-      {path: '', component: ProductsTableComponent},
-      {path: ':id', component: ProductsDetailComponent}
+      { path: '', component: ProductsTableComponent },
+      { path: ':id', component: ProductsDetailComponent }
     ]
   },
-  {path: 'confirmacion', component: ConfirmacionComponentComponent},
-  {path: '', pathMatch: 'full', redirectTo: 'home'},
-  {path: '**', pathMatch: 'full', redirectTo: 'home'}
-
+  { path: 'confirmacion', component: ConfirmacionComponentComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: '**', pathMatch: 'full', redirectTo: 'home' }
 
 
 ];
