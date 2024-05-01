@@ -1,4 +1,7 @@
-<h3>Producto Seleccionado</h3>
+<div class="shopping-cart-header">
+    <a href="/products" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+    <span class="title">Producto Seleccionado</span>
+</div>
 
 <div class="product-container">
     <img src="{{product.imagen}}" alt="product image" class="product-image">
@@ -14,7 +17,7 @@
             <p>Color: {{ product.Colores }}</p>
         </mat-card-content>
         <mat-card-actions>
-            <button mat-flat-button color="primary" class="large-button">ADD TO CART</button>
+            <button mat-flat-button color="primary" class="large-button" (click)="openDialog()" >ADD TO CART</button>
         </mat-card-actions>
     </mat-card>
 </div>

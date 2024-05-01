@@ -7,9 +7,10 @@ import {HttpClient} from "@angular/common/http";
 })
 export class ProductsService {
 
-baseUrl = environment.baseURL + '/productos';
+    baseUrl = environment.baseURL + '/productos';
 
-  constructor(private http: HttpClient) { }
+
+    constructor(private http: HttpClient) { }
 
     getProducts() {
         return this.http.get<any>(this.baseUrl);
@@ -18,4 +19,5 @@ baseUrl = environment.baseURL + '/productos';
     getProduct(index: any) {
         return this.http.get<any>(`${this.baseUrl}/${index}`);
     }
+
 }

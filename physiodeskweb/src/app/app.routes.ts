@@ -10,6 +10,9 @@ import {ProductsDetailComponent} from "./products/components/products-detail/pro
 import {ProductsTableComponent} from "./products/components/products-table/products-table.component";
 import {FisioDetailComponent} from "./fisioterapeutas/components/fisio-detail/fisio-detail.component";
 import {ConfirmacionComponentComponent} from "./fisioterapeutas/components/ConfirmacionComponent/confirmacion-component.component";
+import {ShoppingCartDetailComponent} from "./products/components/shopping-cart-detail/shopping-cart-detail.component";
+import {PaymentInformationComponent} from "./products/components/payment-information/payment-information.component";
+import {PurchaseFinishedComponent} from "./products/components/purchase-finished/purchase-finished.component";
 
 
 export const routes: Routes = [
@@ -26,7 +29,10 @@ export const routes: Routes = [
   {path: 'products', component: ErgonomiczonePageComponent,
     children: [
       {path: '', component: ProductsTableComponent},
-      {path: ':id', component: ProductsDetailComponent}
+      {path: 'shoppingCart', component: ShoppingCartDetailComponent},
+      {path: 'paymentInformation', component: PaymentInformationComponent},
+      {path: 'purchaseFinished', component: PurchaseFinishedComponent},
+      {path: ':id', component: ProductsDetailComponent},
     ]
   },
   {path: 'confirmacion', component: ConfirmacionComponentComponent},
