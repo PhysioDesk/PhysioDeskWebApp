@@ -13,15 +13,22 @@ import {ConfirmacionComponentComponent} from "./fisioterapeutas/components/Confi
 import {ShoppingCartDetailComponent} from "./products/components/shopping-cart-detail/shopping-cart-detail.component";
 import {PaymentInformationComponent} from "./products/components/payment-information/payment-information.component";
 import {PurchaseFinishedComponent} from "./products/components/purchase-finished/purchase-finished.component";
-import {AddProblemContainerComponent} from "./components/add-problem-container/add-problem-container.component";
 import {ProblemasTableComponent} from "./problemas/components/problemas-table/problemas-table.component";
+import {AddProblemContainerComponent} from "./components/add-problem-container/add-problem-container.component";
 
 
 export const routes: Routes = [
 
   {path: 'home',component: MainContainerComponent},
   {path: 'personalData',component:PersonalDataContainerComponent },
-  {path: 'problems',component:ProblemContainerComponent },
+  { path: 'problemsEdit', component: AddProblemContainerComponent,
+    children: [
+      {path:'',component: ProblemasTableComponent},
+    ]},
+  { path: 'problems', component: ProblemContainerComponent ,
+    children: [
+      {path:'', component: ProblemasTableComponent},
+    ]},
   {path: 'fisios', component: FisioterapeutasPageComponent,
     children: [
       {path: '', component: FisiosTableComponent},

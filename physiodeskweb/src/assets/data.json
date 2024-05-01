@@ -2,7 +2,7 @@
   "problems": [
     {
       "id": "1",
-      "name": "Dolor de Cadera por Mala Postura"
+      "name": "Dolor de Cadera por Mala Posture"
     },
     {
       "id": "2",
@@ -23,10 +23,6 @@
     {
       "id": "6",
       "name": "Dolor de Dedos"
-    },
-    {
-      "id": "7",
-      "name": "Mala Postura"
     }
   ]
 }
