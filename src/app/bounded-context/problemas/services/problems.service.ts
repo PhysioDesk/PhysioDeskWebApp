@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import {environment} from "../../../environments/environments";
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {catchError, Observable, pipe, retry, throwError} from "rxjs";
 import {ProblemModel} from "../model/Problem";

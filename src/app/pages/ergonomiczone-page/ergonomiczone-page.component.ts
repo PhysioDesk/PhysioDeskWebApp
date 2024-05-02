@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import {ProductsTableComponent} from "../../products/components/products-table/products-table.component";
 import {RouterOutlet} from "@angular/router";
+import {
+  ProductsTableComponent
+} from "../../bounded-context/products/components/products-table/products-table.component";
 
 @Component({
   selector: 'app-ergonomiczone-page',

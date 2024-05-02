@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
 import {RouterOutlet} from "@angular/router";
-import {ProblemasTableComponent} from "../../problemas/components/problemas-table/problemas-table.component";
-import {ProblemMuestraComponent} from "../../problemas/components/problem-muestra/problem-muestra.component";
+import {
+  ProblemasTableComponent
+} from "../../bounded-context/problemas/components/problemas-table/problemas-table.component";
+import {
+  ProblemMuestraComponent
+} from "../../bounded-context/problemas/components/problem-muestra/problem-muestra.component";
 
 @Component({
   selector: 'app-problem-container',

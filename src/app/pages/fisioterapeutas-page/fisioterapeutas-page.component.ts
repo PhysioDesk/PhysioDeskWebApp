@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import {FisiosTableComponent} from "../../fisioterapeutas/components/fisios-table/fisios-table.component";
 import {RouterOutlet} from "@angular/router";
+import {
+  FisiosTableComponent
+} from "../../bounded-context/fisioterapeutas/components/fisios-table/fisios-table.component";
 
 @Component({
   selector: 'app-fisioterapeutas-page',
