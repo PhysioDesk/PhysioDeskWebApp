@@ -19,13 +19,11 @@ import {ProductsDetailComponent} from "./bounded-context/products/components/pro
 import {ShoppingCartDetailComponent} from "./bounded-context/products/components/shopping-cart-detail/shopping-cart-detail.component";
 import {PaymentInformationComponent} from "./bounded-context/products/components/payment-information/payment-information.component";
 import {PurchaseFinishedComponent} from "./bounded-context/products/components/purchase-finished/purchase-finished.component";
-import {
-  ConfirmacionComponentComponent
-} from "./bounded-context/fisioterapeutas/components/ConfirmacionComponent/confirmacion-component.component";
-
+import {ConfirmacionComponentComponent} from "./bounded-context/fisioterapeutas/components/ConfirmacionComponent/confirmacion-component.component";
+import { AppointmentsPageComponentComponent } from "./pages/appointments-page/appointments-page.component.component";
 
 export const routes: Routes = [
-
+  {path: 'appointments', component: AppointmentsPageComponentComponent},
   {path: 'home',component: MainContainerComponent},
   {path: 'personalData',component:PersonalDataContainerComponent },
   { path: 'problemsEdit', component: AddProblemContainerComponent,
