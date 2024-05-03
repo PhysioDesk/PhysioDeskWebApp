@@ -12,7 +12,7 @@ import {FisioDetailComponent} from "./fisioterapeutas/components/fisio-detail/fi
 import {ConfirmacionComponentComponent} from "./fisioterapeutas/components/ConfirmacionComponent/confirmacion-component.component";
 import {AddProblemContainerComponent} from "./components/add-problem-container/add-problem-container.component";
 import {ProblemasTableComponent} from "./problemas/components/problemas-table/problemas-table.component";
-
+import {AppointmentsPageComponent} from "./components/appointments-page/appointments-page.component";
 
 export const routes: Routes = [
   { path: 'home', component: MainContainerComponent },
@@ -31,15 +31,22 @@ export const routes: Routes = [
       { path: ':id', component: FisioDetailComponent }
     ]
   },
+
   { path: 'products', component: ErgonomiczonePageComponent,
     children: [
       { path: '', component: ProductsTableComponent },
       { path: ':id', component: ProductsDetailComponent }
     ]
   },
+
   { path: 'confirmacion', component: ConfirmacionComponentComponent },
   { path: '', pathMatch: 'full', redirectTo: 'home' },
-  { path: '**', pathMatch: 'full', redirectTo: 'home' }
+  { path: '**', pathMatch: 'full', redirectTo: 'home' },
+
+  {path: 'appointments', component: AppointmentsPageComponent},
+  {path: '', component: AppointmentsPageComponent},
+
+
 
 
 ];
