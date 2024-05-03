@@ -24,11 +24,21 @@
   margin-bottom: 5px;
 }
 
+.lista{
+  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  padding: 10px; /* Agrega espacio alrededor del texto e icono */
+}
 .lista:hover {
   background-color: #0D8D68; /* Nuevo color de fondo al hacer hover */
-
+  color: #f0f0f0 !important;
+}
+.lista .material-icons{
+  margin-right: 10px;
 }
 .name {
+  color: #f0f0f0;
   text-align: center;
 }
 
