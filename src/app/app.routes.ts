@@ -58,8 +58,8 @@ export const routes: Routes = [
     ]
   },
   {path: 'confirmacion', component: ConfirmacionComponentComponent},
-  {path: '', pathMatch: 'full', redirectTo: 'main'},
-  {path: '**', pathMatch: 'full', redirectTo: 'main'}
+  {path: '', pathMatch: 'full', redirectTo: 'home'},
+  {path: '**', pathMatch: 'full', redirectTo: 'home'}
 
 
 
