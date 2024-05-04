@@ -1,4 +1,4 @@
-<div *ngIf="(router.url !== '/main'); else mainPage">
+
 
   <app-header></app-header>
   <section class="app-container">
@@ -9,10 +9,5 @@
       <router-outlet></router-outlet>
     </section>
   </section>
-</div>
 
-<ng-template #mainPage>
-  <div>
-    <app-landing-page></app-landing-page>
-  </div>
-</ng-template>
+
