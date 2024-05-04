@@ -23,6 +23,10 @@ import {
   ConfirmacionComponentComponent
 } from "./bounded-context/fisioterapeutas/components/ConfirmacionComponent/confirmacion-component.component";
 import {LandingPageComponent} from "./pages/landing-page/landing-page/landing-page.component";
+import {AppointmentsPageComponentComponent} from "./pages/appointments-page/appointments-page.component.component";
+import {
+  AppointTableComponentComponent
+} from "./bounded-context/appointments/components/appoint-table.component/appoint-table.component.component";
 
 
 export const routes: Routes = [
