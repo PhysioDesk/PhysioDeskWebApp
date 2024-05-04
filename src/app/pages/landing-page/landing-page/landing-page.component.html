@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap" rel="stylesheet">
+  <script src="funcionalidades.js" defer></script>
+
+  <title>PhysioDesk</title>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="brand-name">
+      <p style="color: #67e0a3;font-size: 2em;font-weight: bold;">PhysioDesk</p><p>
+    </div>
+
+    <nav>
+      <a href="#ofert">Home</a>
+      <a href="#characteristics">About Us</a>
+      <a href="#colab">Services</a>
+      <a href="#functionalities">Contact Us</a>
+      <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+
+    </nav>
+  </div>
+</header>
+
+
+<!--SECCIÓN PRINCIPAL-->
+<section id="principal">
+
+  <h2 class="visible-text">
+    <span class="white-text">Ergonomic</span>
+    <span class="green-text">Design</span>
+  </h2>
+  <h3 style="color: white" class="visible-text">"it's not just for your office, now it can also be a part of your home"</h3>
+
+  <!-- Botones de Registro e Home de Sesión -->
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="/home" class="button button-register">INGRESAR</a>
+  </div>
+
+  <!-- Contenedor para el mensaje de ubicación -->
+  <div class="location-container">
+    <p style="color: white;">¿Nos permites conocer tu ubicación para brindarte un mejor servicio?</p>
+    <button class="button button-location" onclick="solicitarUbicacion()">Permitir Ubicación</button>
+  </div>
+
+
+
+</section>
+
+<!--SECCIONES PARA LOS DEMÁS ESCENARIOS-->
+<section id="ofert" style="background-color: #eaf7ef;">
+  <div class="container">
+    <div class="img-container"></div>
+    <div class="texto">
+      <h2>Sesiones Virtuales</h2>
+      <p style="text-align: justify; text-align: center">
+        Contamos con una gran variedad de profesionales
+      </p>
+      <!-- Boton de Explore -->
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="#registro" class="button button-register">Explore</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="characteristics">
+  <h2 class="visible-text">
+    <span class="white-text">Productos</span>
+    <span class="white-text">Ergonomicos</span>
+  </h2>
+  <h3 style="color: rgb(255, 254, 254)" class="visible-text">"Poseemos una variedad de productos para ergonomizar tu ambiente de trabajo"</h3>
+
+  <!-- Boton de Explore -->
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="#registro" class="button button-register">Explore</a>
+  </div>
+</section>
+
+<section class="informacionPhysio">
+  <div class="contenido">
+    <div class="img-somos"></div>
+    <div class="texto-somos">
+      <h2 style="text-align: justify; text-align: left">Who Are We?</h2>
+      <p style="text-align: justify; text-align: left">
+        PhysioDesk es una emocionante empresa<br>
+        de rehabilitación y ergonomización de los espacios de estudio y trabajo de los usuarios,<br>
+        así como consejos y sesiones personalizadas de manera cómoda y accesible.<br>
+        Nuestra misión es proporcionar experiencias reconfortantes,<br>
+        fomentando el correcto uso del espacio del hogar o trabajo para evitar futuras molestias o lesiones.
+      </p>
+      <div style="text-align: left; margin-top: 20px;">
+      </div>
+    </div>
+    <div class="img-historia"></div>
+    <div class="texto-historia">
+      <h2 style="text-align: justify; text-align: right">Our History</h2>
+      <p style="text-align: justify; text-align: right">
+        PhysioDesk tuvo su origen en el corazón de Lima, Perú, donde constantemente se notaban experiencias <br> negativas entre las personas o compañeros de estudio/trabajo, por lo que, con la correcta <br> educación, se pudo mejorar la condición física de las personas. <br> La historia de PhyisoDesk también nace a partir de una experiencia personal, ya que, como nosotros, miles de  <br> personas también sufren por poseer malas posturas o costumbres, las cuales, por medio de <br> consejos y prácticas, pueden mejorar el estilo de vida de las personas.
+      </p>
+      <div style="text-align: right; margin-top: 20px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+
+  <div class="contenido">
+    <h3 class="titulo">Our Services</h3>
+    <p class="descripcion">PhyioDesk ofrece a sus clientes los siguientes servicios:</p>
+  </div>
+  <div class="imagenes">
+    <img class = "img1" src='../../../../assets/images/analisis_paciente.png' alt="">
+    <img class = "img1" src="../../../../assets/images/sesiones.jpg" alt="">
+    <img class = "img2" src="../../../../assets/images/ergonomia.jpg" alt="">
+  </div>
+</section>
+
+<section class="contact">
+
+  <div class="contenido">
+    <h3 class="titulo">Contact Us</h3>
+    <p class="descripcion">Para cualquier consulta, no dudes en contactar con nosotros.Siempre<br> estamos felices de escucharte y atender tus dudas.</p>
+  </div>
+  <div class="imagenes">
+    <img class = "img1" src="../../../../assets/images/Informacion.jpg" alt="">
+  </div>
+  <div class="tabla">
+    <div class="fila">
+      <div class="celda">
+        <label for="nombre">Full Name</label>
+        <input type="text" id="nombre" placeholder="Your name">
+      </div>
+    </div>
+    <div class="fila">
+      <div class="celda">
+        <label for="email">Email</label>
+        <input type="email" id="emails" placeholder="Your email">
+      </div>
+    </div>
+    <div class="fila">
+      <div class="celda">
+        <label for="mensaje">Type your Message</label>
+        <textarea id="mensaje" placeholder="Your message"></textarea>
+      </div>
+    </div>
+    <div class="fila">
+      <div class="celda">
+        <button onclick="enviarMensaje()">Send</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonios">
+  <div class="contenido">
+    <h3 class="titulo">Our Testimonials</h3>
+    <p class="descripcion">Estos son algunos de los testimonios de nuestros clientes</p>
+  </div>
+
+  <div class="testimonial1">
+    <p>"Trabajo como diseñadora gráfica y paso la mayor parte de mi día frente a la computadora. Desde que empecé a usar PhysioDesk, he notado una gran diferencia en mi postura y en la forma en que me siento al final del día. Los recordatorios para tomar descansos y los ejercicios personalizados han sido realmente útiles para evitar dolores de espalda y cuello. ¡Gracias por esta increíble herramienta!"</p>
+  </div>
+  <div class="testimonial2">
+    <p>"Como programador, siempre he tenido problemas de postura y dolores musculares debido a las largas horas frente al ordenador. Desde que descubrí Ergonomic-Style, mi calidad de vida ha mejorado significativamente. Los consejos de ergonomía y los ejercicios específicos han hecho maravillas para mi salud física. ¡Definitivamente recomendaría esta aplicación a cualquier persona que pase mucho tiempo frente al computador!"</p>
+  </div>
+  <div class="testimonial3">
+    <p>"Trabajo en una oficina y solía sufrir de dolores de espalda y hombros constantes. Después de comenzar a usar PhysioDesk, he notado una gran mejora en mi comodidad y bienestar en el trabajo. Los consejos sobre postura y los recordatorios para estirar son muy útiles para mantenerme en forma durante todo el día. ¡Estoy realmente agradecida por esta aplicación!"</p>
+  </div>
+  <div class="testimonial4">
+    <p>"Como escritor independiente, paso horas y horas frente a mi computadora escribiendo. Antes de usar Ergonomic-Style, solía tener muchos problemas con mi espalda y mis muñecas. Esta aplicación ha sido un verdadero salvavidas para mí. Los ejercicios de estiramiento y las recomendaciones de ergonomía han hecho una gran diferencia en mi salud física. ¡No puedo recomendar esta app lo suficiente!"</p>
+  </div>
+</section>
+
+<section class="unete">
+  <div class="contenido">
+    <h3 class="titulo">Forma parte de PhysioDesk</h3>
+    <p class="descripcion">Ingresa tus datos y registrate para que puedas formar parte de nuestro equipo de profesionales!</p>
+  </div>
+  <form id="tablita">
+    <table id="tabla">
+      <tr>
+        <td><label for="name">Nombre:</label></td>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Correo electrónico:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Teléfono:</label></td>
+        <td><input type="email" id="phone" name="phone"></td>
+      </tr>
+      <tr>
+        <td><label for="message">Mensaje:</label></td>
+        <td><textarea id="message" name="message"></textarea></td>
+      </tr>
+    </table>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+
+
+
+<footer>
+  <!-- SIGUENOS EN REDES SOCIALES -->
+  <p>Síguenos en nuestras redes sociales: </p>
+  <div class="social-icons">
+
+  </div>
+  <!-- DERECHOS DE AUTORES -->
+  <br>
+  <p>&copy; CopyRight  </p>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+

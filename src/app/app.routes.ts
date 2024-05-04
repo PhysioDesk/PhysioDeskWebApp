@@ -19,11 +19,15 @@ import {ProductsDetailComponent} from "./bounded-context/products/components/pro
 import {ShoppingCartDetailComponent} from "./bounded-context/products/components/shopping-cart-detail/shopping-cart-detail.component";
 import {PaymentInformationComponent} from "./bounded-context/products/components/payment-information/payment-information.component";
 import {PurchaseFinishedComponent} from "./bounded-context/products/components/purchase-finished/purchase-finished.component";
-import {ConfirmacionComponentComponent} from "./bounded-context/fisioterapeutas/components/ConfirmacionComponent/confirmacion-component.component";
-import { AppointmentsPageComponentComponent } from "./pages/appointments-page/appointments-page.component.component";
+import {
+  ConfirmacionComponentComponent
+} from "./bounded-context/fisioterapeutas/components/ConfirmacionComponent/confirmacion-component.component";
+import {LandingPageComponent} from "./pages/landing-page/landing-page/landing-page.component";
+
 
 export const routes: Routes = [
-  {path: 'appointments', component: AppointmentsPageComponentComponent},
+
+  {path: 'main',component: LandingPageComponent},
   {path: 'home',component: MainContainerComponent},
   {path: 'personalData',component:PersonalDataContainerComponent },
   { path: 'problemsEdit', component: AddProblemContainerComponent,
@@ -50,8 +54,8 @@ export const routes: Routes = [
     ]
   },
   {path: 'confirmacion', component: ConfirmacionComponentComponent},
-  {path: '', pathMatch: 'full', redirectTo: 'home'},
-  {path: '**', pathMatch: 'full', redirectTo: 'home'}
+  {path: '', pathMatch: 'full', redirectTo: 'main'},
+  {path: '**', pathMatch: 'full', redirectTo: 'main'}
 
 
 
