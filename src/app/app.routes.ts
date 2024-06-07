@@ -27,6 +27,15 @@ import {AppointmentsPageComponentComponent} from "./pages/appointments-page/appo
 import {
   AppointTableComponentComponent
 } from "./bounded-context/appointments/components/appoint-table.component/appoint-table.component.component";
+import {TheActivitiesPageComponent} from "./pages/activities-page/the-activities-page/the-activities-page.component";
+import {
+  GridActivitiesComponent
+} from "./bounded-context/activities/components/grid-activities/grid-activities.component";
+import {
+  ActivityDetailComponent
+} from "./bounded-context/activities/components/activity-detail/activity-detail.component";
+import {ConfigNotificationsPageComponent} from "./pages/config-notifications-page/config-notifications-page.component";
+import {NotificationsPageComponent} from "./pages/notifications-page/notifications-page.component";
 
 
 export const routes: Routes = [
@@ -42,12 +51,18 @@ export const routes: Routes = [
     children: [
       {path:'', component: ProblemasTableComponent},
     ]},
+  { path: 'appointments', component: AppointmentsPageComponentComponent },
   {path: 'fisios', component: FisioterapeutasPageComponent,
     children: [
       {path: '', component: FisiosTableComponent},
       {path: ':id', component: FisioDetailComponent}
     ]
   },
+  { path: 'activities', component: TheActivitiesPageComponent,
+    children: [
+        {path: '', component: GridActivitiesComponent},
+      {path: ':id', component: ActivityDetailComponent}
+    ]},
   {path: 'products', component: ErgonomiczonePageComponent,
     children: [
       {path: '', component: ProductsTableComponent},
@@ -57,6 +72,8 @@ export const routes: Routes = [
       {path: ':id', component: ProductsDetailComponent},
     ]
   },
+  {path: 'config-notifications', component: ConfigNotificationsPageComponent},
+  {path: 'notifications', component: NotificationsPageComponent},
   {path: 'confirmacion', component: ConfirmacionComponentComponent},
   {path: '', pathMatch: 'full', redirectTo: 'home'},
   {path: '**', pathMatch: 'full', redirectTo: 'home'}

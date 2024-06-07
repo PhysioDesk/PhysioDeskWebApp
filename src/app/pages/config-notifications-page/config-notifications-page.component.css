@@ -1,0 +1,35 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+.notification-settings {
+    margin: 20px;
+    text-align: center;
+}
+
+mat-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #757575;
+    font-size: 200px;
+    margin-bottom: 30px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.add {
+    background-color: #A6C03A !important;
+    min-width: 100px;
+    height: 30px;
+}
+
+mat-icon-button {
+    padding: 0;
+    width: 36px;  /* Ajusta según necesidades */
+    height: 36px; /* Ajusta según necesidades */
+    display: inline-flex; /* Centra el icono vertical y horizontalmente */
+    justify-content: center;
+    align-items: center;
+}

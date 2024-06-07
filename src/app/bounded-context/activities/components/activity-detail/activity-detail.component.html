@@ -1,0 +1,20 @@
+<button mat-icon-button (click)="goBack()">
+    <mat-icon>arrow_back</mat-icon>
+</button>
+
+<mat-card class="exercise-card">
+    <mat-card-header>
+        <mat-card-title>What should I do?</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <h3>{{ activity.nombre }}</h3>
+        <p>{{ activity.descripcion }}</p>
+        <mat-card-title>Steps to follow:</mat-card-title>
+        <mat-list>
+            <mat-list-item *ngFor="let step of activity.pasos.split('. ')">{{ step }}</mat-list-item>
+        </mat-list>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="{}" class="full-width-button">MARK AS COMPLETE</button>
+    </mat-card-actions>
+</mat-card>

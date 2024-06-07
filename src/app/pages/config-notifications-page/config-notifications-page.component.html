@@ -1,0 +1,38 @@
+
+<h2>Configure Notifications</h2>
+<div class="notification-settings">
+    <mat-icon class="large-icon">notifications</mat-icon>
+
+    <mat-form-field>
+        <mat-label>Switched:</mat-label>
+        <mat-select placeholder="Select (ON or OFF)">
+            <mat-option value="on">ON</mat-option>
+            <mat-option value="off">OFF</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <div>
+        <h3>How many notifications do you need?</h3>
+        <div *ngFor="let notification of notifications; let i = index">
+            <mat-form-field>
+                <input matInput placeholder="Time remaining" [(ngModel)]="notification.time">
+                <button mat-icon-button (click)="deleteNotification(notification.id)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+        <mat-form-field>
+            <mat-label>Hours</mat-label>
+            <mat-select #newHour>
+                <mat-option *ngFor="let hour of hours" [value]="hour">{{ hour }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Minutes</mat-label>
+            <mat-select #newMinute>
+                <mat-option *ngFor="let minute of minutes" [value]="minute">{{ minute }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <button class="add" mat-raised-button color="primary" (click)="addNotification(newHour.value, newMinute.value)">Add Reminder</button>
+    </div>
+</div>

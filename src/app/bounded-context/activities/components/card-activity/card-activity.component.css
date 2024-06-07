@@ -1,0 +1,25 @@
+.custom-card {
+    display: block;
+    width: 100%;
+    box-shadow: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+mat-card-actions {
+    padding: 0 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: 14px;
+}

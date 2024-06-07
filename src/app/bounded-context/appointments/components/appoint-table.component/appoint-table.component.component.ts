@@ -4,7 +4,7 @@ import {
   MatCellDef,
   MatColumnDef,
   MatHeaderCell,
-  MatHeaderCellDef,
+  MatHeaderCellDef, MatHeaderRow, MatHeaderRowDef, MatRow, MatRowDef,
   MatTable,
   MatTableDataSource
 } from "@angular/material/table";
@@ -14,7 +14,7 @@ import {Router} from "@angular/router";
 import {GrabacionService} from "../../grabacion.service";
 
 @Component({
-  selector: 'app-appoint-table.component',
+  selector: 'app-appoint-table',
   standalone: true,
   imports: [
     MatHeaderCell,
@@ -22,7 +22,11 @@ import {GrabacionService} from "../../grabacion.service";
     MatColumnDef,
     MatTable,
     MatHeaderCellDef,
-    MatCellDef
+    MatCellDef,
+    MatHeaderRow,
+    MatRow,
+    MatRowDef,
+    MatHeaderRowDef
   ],
   templateUrl: './appoint-table.component.component.html',
   styleUrl: './appoint-table.component.component.css'
@@ -32,7 +36,7 @@ export class AppointTableComponentComponent implements OnInit {
   data: any[]=[];
   dataSource= new MatTableDataSource<any>(this.data);
 
-  @ViewChild(MatPaginator,{static: true}) paginator!: MatPaginator;
+  //@ViewChild(MatPaginator,{static: true}) paginator!: MatPaginator;
 
   grabaciones=[];
 
@@ -49,7 +53,7 @@ export class AppointTableComponentComponent implements OnInit {
     this.grabacionService.getGrabaciones().subscribe(
       (res) => {
         this.dataSource.data = res;
-        this.dataSource.paginator = this.paginator;
+        //this.dataSource.paginator = this.paginator;
       },
       (error) => {
         console.log(error);
@@ -57,6 +61,7 @@ export class AppointTableComponentComponent implements OnInit {
     );
 
   }
+  /*
   applyFilter(event: Event) {
     const inputElement = event.target as HTMLInputElement;
     const filteredValue = inputElement.value.replace(/[^a-zA-Z ]/g, '');//Remueve caracteres no deseados
@@ -66,10 +71,10 @@ export class AppointTableComponentComponent implements OnInit {
     if(this.dataSource.paginator){
       this.dataSource.paginator.firstPage();
     }
-  }
+  }*/
 
-  getRow(row: any){
+  /*getRow(row: any){
     this.router.navigateByUrl(`/fisios/${row.id}`);
-  }
+  }*/
 
 }

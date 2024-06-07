@@ -1,0 +1,12 @@
+.appointment-card {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    background-color: #A6C03A;
+    min-width: 100px;
+    height: 30px;
+}

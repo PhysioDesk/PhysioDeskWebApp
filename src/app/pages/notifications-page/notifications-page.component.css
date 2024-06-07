@@ -1,0 +1,5 @@
+.container {
+    display: grid;
+    place-items: center; /* Centra en ambos ejes */
+    height: 300px;
+}
