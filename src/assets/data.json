@@ -41,5 +41,97 @@
       "physio_id": "2",
       "hour": "20:00"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "lastname": "Doe",
+      "phone": "1234567890",
+      "email": "john.doe@example.com",
+      "address": "1234 Elm Street",
+      "city": "Springfield"
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "lastname": "Smith",
+      "phone": "0987654321",
+      "email": "jane.smith@example.com",
+      "address": "5678 Oak Street",
+      "city": "Shelbyville"
+    },
+    {
+      "id": 3,
+      "name": "Alice",
+      "lastname": "Johnson",
+      "phone": "5551234567",
+      "email": "alice.johnson@example.com",
+      "address": "1357 Maple Street",
+      "city": "Capital City"
+    },
+    {
+      "id": 4,
+      "name": "Bob",
+      "lastname": "Brown",
+      "phone": "5557654321",
+      "email": "bob.brown@example.com",
+      "address": "2468 Pine Street",
+      "city": "North Haverbrook"
+    },
+    {
+      "id": 5,
+      "name": "Charlie",
+      "lastname": "Davis",
+      "phone": "3216549870",
+      "email": "charlie.davis@example.com",
+      "address": "1928 Birch Street",
+      "city": "Ogdenville"
+    },
+    {
+      "id": 6,
+      "name": "David",
+      "lastname": "Wilson",
+      "phone": "1597534862",
+      "email": "david.wilson@example.com",
+      "address": "7531 Walnut Street",
+      "city": "Brooklyn"
+    },
+    {
+      "id": 7,
+      "name": "Eve",
+      "lastname": "Moore",
+      "phone": "3571594862",
+      "email": "eve.moore@example.com",
+      "address": "9512 Cedar Street",
+      "city": "Queens"
+    },
+    {
+      "id": 8,
+      "name": "Frank",
+      "lastname": "Taylor",
+      "phone": "2584563791",
+      "email": "frank.taylor@example.com",
+      "address": "8523 Spruce Street",
+      "city": "Manhattan"
+    },
+    {
+      "id": 9,
+      "name": "Grace",
+      "lastname": "Anderson",
+      "phone": "4561237890",
+      "email": "grace.anderson@example.com",
+      "address": "6542 Fir Street",
+      "city": "Bronx"
+    },
+    {
+      "id": 10,
+      "name": "Henry",
+      "lastname": "Thomas",
+      "phone": "9870321465",
+      "email": "henry.thomas@example.com",
+      "address": "3214 Cedar Avenue",
+      "city": "Staten Island"
+    }
   ]
 }

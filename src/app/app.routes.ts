@@ -36,12 +36,14 @@ import {
 } from "./bounded-context/activities/components/activity-detail/activity-detail.component";
 import {ConfigNotificationsPageComponent} from "./pages/config-notifications-page/config-notifications-page.component";
 import {NotificationsPageComponent} from "./pages/notifications-page/notifications-page.component";
+import {UsersListPageComponent} from "./pages/users-list-page/users-list-page.component";
 
 
 export const routes: Routes = [
 
-  {path: 'main',component: LandingPageComponent},
+  {path: 'main', component: LandingPageComponent},
   {path: 'home',component: MainContainerComponent},
+  {path: 'users-list', component: UsersListPageComponent},
   {path: 'personalData',component:PersonalDataContainerComponent },
   { path: 'problemsEdit', component: AddProblemContainerComponent,
     children: [
@@ -77,8 +79,6 @@ export const routes: Routes = [
   {path: 'confirmacion', component: ConfirmacionComponentComponent},
   {path: '', pathMatch: 'full', redirectTo: 'home'},
   {path: '**', pathMatch: 'full', redirectTo: 'home'}
-
-
 
 ];
 

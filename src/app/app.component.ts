@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import {Router, RouterOutlet} from '@angular/router';
+import {NavigationEnd, Router, RouterOutlet, Event} from '@angular/router';
 import {HeaderComponent} from "./public/header/header.component";
 import {SidebarComponent} from "./public/sidebar/sidebar.component";
 import {MainContainerComponent} from "./pages/main-container/main-container.component";
 import {NgIf} from "@angular/common";
 import {LandingPageComponent} from "./pages/landing-page/landing-page/landing-page.component";
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -14,12 +15,16 @@ import {LandingPageComponent} from "./pages/landing-page/landing-page/landing-pa
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'physiodeskweb';
-  enPaginaEspecifica: boolean = false;
-  constructor(protected router: Router) {
-    this.router.events.subscribe((event) => {
-      // Verificar si la ruta actual coincide con la página específica
-      this.enPaginaEspecifica = this.router.url === 'main';
+  showHeaderAndSidebar: boolean = true;
+
+  constructor(private router: Router) {
+    // Escucha los cambios de ruta
+    this.router.events.pipe(
+        filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      // Verifica si la ruta actual es '/main'
+      this.showHeaderAndSidebar = event.url !== '/main';
+      console.log(this.showHeaderAndSidebar)
     });
   }
 }

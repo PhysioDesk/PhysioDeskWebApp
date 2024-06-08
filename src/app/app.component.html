@@ -1,13 +1,12 @@
-
-
-  <app-header></app-header>
-  <section class="app-container">
+<app-header *ngIf="showHeaderAndSidebar"></app-header>
+<section class="app-container" *ngIf="showHeaderAndSidebar">
     <section class="sidebar-container">
-      <app-sidebar class="app-sidebar"></app-sidebar>
+        <app-sidebar class="app-sidebar"></app-sidebar>
     </section>
     <section class="content-container">
-      <router-outlet></router-outlet>
+        <router-outlet></router-outlet>
     </section>
-  </section>
+</section>
+<router-outlet *ngIf="!showHeaderAndSidebar"></router-outlet>
 
 
