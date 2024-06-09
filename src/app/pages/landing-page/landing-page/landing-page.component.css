@@ -184,10 +184,6 @@ nav a {
   background-position: center center; /* Posiciona la imagen de fondo en el centro */
 }
 
-#principal h1, #principal h3 {
-  margin-top: -40px; /* Mover el texto hacia arriba */
-}
-
 /* Estilos para la sección de oferta de valor */
 #ofert {
   padding: 80px 0;
