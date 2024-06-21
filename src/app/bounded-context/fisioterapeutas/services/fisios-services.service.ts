@@ -14,11 +14,12 @@ export class FisiosServicesService {
   }
 
   getFisios(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.baseUrl}/fisios/`);
+    return this.http.get<any[]>(`${this.baseUrl}/physios`);
   }
 
+
   getFisio(index: any) {
-    return this.http.get<any>(`${this.baseUrl}/fisios/${index}`);
+    return this.http.get<any>(`${this.baseUrl}/physios/${index}`);
   }
 
 }

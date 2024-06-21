@@ -45,8 +45,10 @@
 
         this.fisiosServices.getFisios().subscribe(
           (res) => {
+            console.log(res);
             this.dataSource.data = res;
             this.dataSource.paginator = this.paginator;
+
           },
           (error) => {
             console.log(error);
