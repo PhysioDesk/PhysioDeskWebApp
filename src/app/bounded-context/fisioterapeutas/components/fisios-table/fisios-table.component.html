@@ -28,9 +28,13 @@
       <th mat-header-cell *matHeaderCellDef role="columnheader">Edad</th>
       <td mat-cell *matCellDef="let fisio" role="gridcell">{{ fisio.edad }}</td>
     </ng-container>
-    <ng-container matColumnDef="horarios">
+    <ng-container matColumnDef="horario">
       <th mat-header-cell *matHeaderCellDef role="columnheader">Horarios</th>
-      <td mat-cell *matCellDef="let fisio" role="gridcell">{{ fisio.horarios }}</td>
+      <td mat-cell *matCellDef="let fisio" role="gridcell">
+
+      <p *ngFor="let horario of fisio.horario">{{ horario.fecha }} - {{horario.hora}}</p>
+
+      </td>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns" role="row"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;" role="row"

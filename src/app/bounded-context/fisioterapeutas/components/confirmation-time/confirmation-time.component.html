@@ -1,0 +1,6 @@
+<h2 mat-dialog-title>Appointment Confirmation!</h2>
+<mat-dialog-content>You're trying to create an appointment for {{ data.time.fecha }} at {{data.time.hora}}</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button (click)="createAppointment()" [mat-dialog-close]="true">Confirm</button>
+    <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

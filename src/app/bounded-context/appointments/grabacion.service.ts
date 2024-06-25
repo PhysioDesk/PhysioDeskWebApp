@@ -13,10 +13,10 @@ export class GrabacionService {
   }
 
   getGrabaciones(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.baseUrl}/grabaciones/`);
+    return this.http.get<any[]>(`${this.baseUrl}/records`);
   }
 
   getGrabacion(index: any) {
-    return this.http.get<any>(`${this.baseUrl}/grabaciones/${index}`);
+    return this.http.get<any>(`${this.baseUrl}/records/${index}`);
   }
 }

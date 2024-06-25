@@ -1,6 +1,5 @@
 .personalData-container {
   display: flex;
-  height: 100%; /* Ajustar la altura del contenedor principal al 100% del alto de la ventana del navegador */
   justify-content: space-between; /* Ajusta el contenido a los extremos */
   margin-left: 4vw;
 }
@@ -35,14 +34,6 @@
   grid-area: form;
 }
 
-.input-wrapper {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px;
-}
-
 label {
   margin-right: 10px;
   font-size: 120%;
@@ -53,21 +44,6 @@ input {
   flex: 1;
   border: none;
   outline: none;
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="add"],
-input[type="city"] {
-  padding: 8px;
-}
-
-.city-input-container {
-  margin-bottom: 10px;
-  margin-top: 2vw;
-  grid-area: form;
-  max-width: 50%;
 }
 
 .country {
@@ -106,7 +82,7 @@ input[type="city"]::placeholder {
 }
 
 .titulo-location {
-  font-size: 220%; 
+  font-size: 220%;
 }
 
 .texto-location {

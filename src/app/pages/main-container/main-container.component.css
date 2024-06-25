@@ -1,6 +1,7 @@
 
 .main-container {
   display: flex;
+  flex-direction: column;
   height: 100%; /* Ajustar la altura del contenedor principal al 100% del alto de la ventana del navegador */
   margin-left: 4vw;
 }

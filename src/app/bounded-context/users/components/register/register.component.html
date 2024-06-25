@@ -1,0 +1,18 @@
+<div class="register-container">
+    <mat-card class="register-card">
+        <mat-card-header>
+            <mat-card-title>Sign Up</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form (submit)="saveUser()" #userForm='ngForm'>
+                <mat-form-field><input type="text" matInput placeholder="Name" name="name" required [(ngModel)]="userData.name"></mat-form-field>
+                <mat-form-field><input type="text" matInput placeholder="Last Name" name="lastname" required [(ngModel)]="userData.lastname"></mat-form-field>
+                <mat-form-field><input type="number" matInput placeholder="Phone" name="phone" required [(ngModel)]="userData.phone"></mat-form-field>
+                <mat-form-field><input type="text" matInput placeholder="Email" name="email" required [(ngModel)]="userData.email"></mat-form-field>
+                <mat-form-field><input type="text" matInput placeholder="Address" name="address" required [(ngModel)]="userData.address"></mat-form-field>
+                <mat-form-field><input type="text" matInput placeholder="City" name="city" required [(ngModel)]="userData.city"></mat-form-field>
+                <button mat-raised-button color="primary">Register</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

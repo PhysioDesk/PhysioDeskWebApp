@@ -1,0 +1,14 @@
+<div class="user-id-container">
+    <mat-card class="user-id-card">
+        <mat-card-header>
+            <mat-card-title>Login with user id</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form #userForm='ngForm' (ngSubmit)="onSubmit()">
+                <mat-form-field><input type="number" matInput placeholder="User ID" name="userId" required [(ngModel)]="userId"></mat-form-field>
+                <button mat-raised-button color="primary" type="submit">Login</button>
+                <button mat-raised-button color="primary" class="register" (click)="goToRegister()">Register</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

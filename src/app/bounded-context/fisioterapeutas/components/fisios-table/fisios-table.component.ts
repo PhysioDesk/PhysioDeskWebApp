@@ -8,24 +8,26 @@
   import {Router} from "@angular/router";
   import {MatLabel} from "@angular/material/form-field";
   import {HttpClientModule} from "@angular/common/http";
+  import {NgForOf} from "@angular/common";
 
   @Component({
     selector: 'app-fisios-table',
     standalone: true,
-    imports: [
-      MatTableModule,
-      MatToolbar,
-      MatFormField,
-      MatPaginator,
-      MatInput,
-      MatLabel,
-      HttpClientModule
-    ],
+      imports: [
+          MatTableModule,
+          MatToolbar,
+          MatFormField,
+          MatPaginator,
+          MatInput,
+          MatLabel,
+          HttpClientModule,
+          NgForOf
+      ],
     templateUrl: './fisios-table.component.html',
     styleUrl: './fisios-table.component.css'
   })
   export class FisiosTableComponent implements OnInit {
-      displayedColumns: string[]=['nombre','imagen','biografia','edad','horarios'];
+      displayedColumns: string[]=['nombre','imagen','biografia','edad','horario'];
       data: any[]=[];
       dataSource= new MatTableDataSource<any>(this.data);
 
@@ -54,6 +56,8 @@
             console.log(error);
           }
         );
+
+
 
     }
       applyFilter(event: Event) {

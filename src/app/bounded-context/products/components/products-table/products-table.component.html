@@ -10,11 +10,6 @@
     <!--- Note that these columns can be defined in any order.
           The actual rendered columns are set as a property on the row definition" -->
 
-    <!-- Position Column -->
-    <ng-container matColumnDef="id">
-        <th mat-header-cell *matHeaderCellDef> Id </th>
-        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
-    </ng-container>
 
     <!-- Name Column -->
     <ng-container matColumnDef="name">
@@ -25,20 +20,20 @@
     <!-- Weight Column -->
     <ng-container matColumnDef="description">
         <th mat-header-cell *matHeaderCellDef> Descripcion </th>
-        <td mat-cell *matCellDef="let element"> {{element.descripcion}} </td>
+        <td mat-cell *matCellDef="let element"> {{element.description}} </td>
     </ng-container>
 
     <!-- Symbol Column -->
     <ng-container matColumnDef="price">
         <th mat-header-cell *matHeaderCellDef> Precio </th>
-        <td mat-cell *matCellDef="let element"> ${{ element.precio }} </td>
+        <td mat-cell *matCellDef="let element"> ${{ element.price }} </td>
     </ng-container>
 
     <!-- Image Column -->
     <ng-container matColumnDef="imagen">
         <th mat-header-cell *matHeaderCellDef> Imagen </th>
         <td mat-cell *matCellDef="let element">
-            <img src="{{element.imagen}}" alt="imagen" width="100" height="100">
+            <img src="{{element.imageUrl}}" alt="imagen" width="100" height="100">
         </td>
     </ng-container>
 

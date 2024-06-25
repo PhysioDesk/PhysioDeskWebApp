@@ -37,12 +37,16 @@ import {
 import {ConfigNotificationsPageComponent} from "./pages/config-notifications-page/config-notifications-page.component";
 import {NotificationsPageComponent} from "./pages/notifications-page/notifications-page.component";
 import {UsersListPageComponent} from "./pages/users-list-page/users-list-page.component";
+import {RegisterComponent} from "./bounded-context/users/components/register/register.component";
+import {LoginComponent} from "./bounded-context/users/components/login/login.component";
 
 
 export const routes: Routes = [
 
   {path: 'main', component: LandingPageComponent},
   {path: 'home',component: MainContainerComponent},
+  {path: 'register', component: RegisterComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'users-list', component: UsersListPageComponent},
   {path: 'personalData',component:PersonalDataContainerComponent },
   { path: 'problemsEdit', component: AddProblemContainerComponent,
@@ -77,8 +81,8 @@ export const routes: Routes = [
   {path: 'config-notifications', component: ConfigNotificationsPageComponent},
   {path: 'notifications', component: NotificationsPageComponent},
   {path: 'confirmacion', component: ConfirmacionComponentComponent},
-  {path: '', pathMatch: 'full', redirectTo: 'home'},
-  {path: '**', pathMatch: 'full', redirectTo: 'home'}
+  {path: '', pathMatch: 'full', redirectTo: 'login'},
+  {path: '**', pathMatch: 'full', redirectTo: 'login'}
 
 ];
 

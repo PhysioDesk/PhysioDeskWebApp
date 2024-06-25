@@ -14,19 +14,17 @@ import {FisiosServicesService} from "../../../fisioterapeutas/services/fisios-se
 export class PendingAppointmentCardComponent implements OnInit {
 
   @Input() appointment: any;
-  physiotherapist!: FisiosModel;
+  physiotherapist!: any;
 
   constructor(private physioService: FisiosServicesService) {
   }
 
   ngOnInit() {
-    this.physiotherapist = {} as FisiosModel;
-
     this.getPhysiotherapist();
   }
 
   getPhysiotherapist() {
-    this.physioService.getFisio(this.appointment["physio_id"]).subscribe(
+    this.physioService.getFisio(this.appointment["physiotherapistId"]).subscribe(
         (response: any) => {
           this.physiotherapist = response;
         }

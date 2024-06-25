@@ -1,10 +1,12 @@
+import {serialize} from "node:v8";
+
 export class Product {
     public id: any;
     public name: any;
-    public descripcion: any;
-    public precio: any;
-    public imagen: any;
+    public description: any;
+    public price: any;
+    public imageUrl: any;
     public rating: any;
-    public Dimensiones: any;
+    public dimensiones: any;
     public Colores: any;
 }

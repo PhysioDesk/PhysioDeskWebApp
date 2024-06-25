@@ -4,16 +4,16 @@
 </div>
 
 <div class="product-container">
-    <img src="{{product.imagen}}" alt="product image" class="product-image">
+    <img src="{{product.imageUrl}}" alt="product image" class="product-image">
 
     <mat-card class="product-card">
         <mat-card-header>
             <mat-card-title>{{ product.name }}</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            <p>Descripción: {{ product.descripcion }}</p>
+            <p>Descripción: {{ product.description }}</p>
             <p>Rating: {{ product.rating }}</p>
-            <p>Dimensiones: {{ product.Dimensiones }}</p>
+            <p>Dimensiones: {{ product.dimensiones }}</p>
             <p>Color: {{ product.Colores }}</p>
         </mat-card-content>
         <mat-card-actions>

@@ -16,15 +16,17 @@ import {PendingAppointmentCardComponent} from "../pending-appointment-card/pendi
 export class PendingAppointmentsComponent implements OnInit{
 
   appointments: any[] = [];
+  userId: any;
 
   constructor(private appointmentService: AppointmentsService, private physioService: FisiosServicesService) { }
 
   ngOnInit() {
+    this.userId = localStorage.getItem('user_id');
     this.getAppointments();
   }
 
   getAppointments() {
-    this.appointmentService.getAppointments().subscribe((res) => {
+    this.appointmentService.getAppointments(this.userId).subscribe((res) => {
         this.appointments = res;
     });
   }

@@ -7,7 +7,7 @@ import {environment} from "../../../../environments/environments";
 })
 export class ProductsService {
 
-    baseUrl = environment.baseURL + '/productos';
+    baseUrl = environment.baseURL + '/products';
 
 
     constructor(private http: HttpClient) { }
