@@ -27,6 +27,15 @@ export class UsersService {
     return this.http.get<any>(this.baseUrl + '/' + id);
   }
 
+  getUserByEmail(email: string) {
+    return this.http.get<any>(this.baseUrl + '/email/' + email);
+
+  }
+
+ getUserByEmailAndPassword(email: string,password: string) {
+    return this.http.get<any>(this.baseUrl + '/email/' + email + '/password/' + password);
+  }
+
   createUser(item: User) : Observable<User> {
     console.log(JSON.stringify(item))
     return this.http.post<User>(this.baseUrl, JSON.stringify(item), this.httpOptions);

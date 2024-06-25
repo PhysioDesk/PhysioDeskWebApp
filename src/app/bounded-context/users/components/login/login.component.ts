@@ -18,13 +18,15 @@ export class LoginComponent{
   @ViewChild('userForm', {static: false}) userForm!: NgForm;
 
   userId !: number;
-
+  email !: string;
+  password !: string;
   constructor(private router: Router) {
   }
 
   onSubmit(): void {
-      localStorage.setItem('user_id', this.userId.toString());
-      this.router.navigateByUrl('/home');
+    localStorage.setItem('email', this.email.toString());
+    localStorage.setItem('password', this.password.toString());
+    this.router.navigateByUrl('/home');
   }
 
   goToRegister(): void {

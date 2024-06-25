@@ -6,4 +6,5 @@ export class User {
     email:any;
     address:any;
     city:any;
+    password:any;
 }

@@ -31,7 +31,9 @@ import {User} from "../../bounded-context/users/models/user.model";
 export class MainContainerComponent implements OnInit {
 
     userId !: number;
+    email !: string;
     user !: User;
+    password !: string;
 
   rutaActual: string='';
   constructor(private router: Router, private activatedRoute: ActivatedRoute, private usersService: UsersService) { }
@@ -41,11 +43,22 @@ export class MainContainerComponent implements OnInit {
         this.rutaActual = event.url;
       }
     });
-    this.user = {}  as User;
-    var strId = localStorage.getItem('user_id');
-    this.userId = parseInt(strId ? strId : '0');
-    console.log(this.userId);
-    this.getUser();
+
+    this.user = {} as User;
+    var strEmail = localStorage.getItem("email");
+    var strPassword = localStorage.getItem("password");
+
+    if (strEmail && strPassword) {
+      this.email = strEmail;
+      this.password = strPassword;
+      console.log(`Email: ${this.email}, Password: ${this.password}`);
+      this.getUserbyEmailAndPassword();
+    } else {
+      // Manejar el caso cuando email o password no están definidos en localStorage
+      console.error('Email or Password not found in localStorage');
+      // Puedes redirigir al usuario a la página de inicio de sesión
+      this.router.navigateByUrl('/login');
+    }
   }
 
 
@@ -53,6 +66,19 @@ export class MainContainerComponent implements OnInit {
       this.usersService.getUser(this.userId).subscribe((data: any) => {
           this.user = data;
       });
+  }
+
+  getUserbyEmail() {
+    this.usersService.getUserByEmail(this.email).subscribe((data: any) => {
+      this.user = data;
+    });
+  }
+
+  getUserbyEmailAndPassword() {
+    this.usersService.getUserByEmailAndPassword(this.email, this.password).subscribe((data: any) => {
+      this.user = data;
+    });
+
   }
 
   goToDetail() {

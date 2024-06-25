@@ -14,7 +14,7 @@ import {UsersService} from "../../services/users.service";
 })
 export class UserTableComponent implements OnInit {
 
-  displayedColumns: string[] = ['name', 'lastname', 'phone', 'email', 'address', 'city'];
+  displayedColumns: string[] = ['name', 'lastname', 'phone', 'email', 'address', 'city','password'];
 
   data: any[] = [];
 
