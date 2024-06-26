@@ -74,11 +74,21 @@ export class MainContainerComponent implements OnInit {
     });
   }
 
-  getUserbyEmailAndPassword() {
-    this.usersService.getUserByEmailAndPassword(this.email, this.password).subscribe((data: any) => {
-      this.user = data;
-    });
-
+  getUserbyEmailAndPassword(): void {
+    this.usersService.getUserByEmailAndPassword(this.email, this.password).subscribe(
+      (data: any) => {
+        // Manejar la respuesta exitosa
+        this.user = data;
+        localStorage.setItem('token', data.token);
+        this.router.navigateByUrl('/main');
+      },
+      (error) => {
+        // Manejar el error de autenticación
+        console.error('Invalid email or password', error);
+        // Redirigir al usuario a la página de inicio de sesión
+        this.router.navigateByUrl('/login');
+      }
+    );
   }
 
   goToDetail() {
